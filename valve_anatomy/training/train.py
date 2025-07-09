@@ -1,10 +1,16 @@
 # train.py
+import sys
+import os
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+sys.path.insert(0, ROOT_DIR)
+
 
 import torch
 import torch.nn as nn
 from tqdm import tqdm
-from config import LR, EPOCHS, PATIENCE, device
-from evaluate import evaluate
+from config.config import LR, EPOCHS, PATIENCE, device
+from evalution.evaluation_hierarchical import evaluate
+
 def train_model(model, train_loader, val_loader, model_name, num_epochs=EPOCHS, patience_limit=PATIENCE):
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=LR)

@@ -1,12 +1,16 @@
 # train_hierarchical.py
+import sys
+import os
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+sys.path.insert(0, ROOT_DIR)
 
 import torch
-from dataset import get_loader
-from valve_anatomy.model.r2plus1d_hierarchical_iaff import DualStreamLateFusionModel  # This model includes iAFF internally
+from data.dataset import get_loader
+from model.r2plus1d_hierarchical_iaff import DualStreamLateFusionModel  # This model includes iAFF internally
 from train import train_model
-from valve_anatomy.evaluation.evaluation_hierarchical import evaluate_with_report
+from evalution.evaluation_hierarchical import evaluate_with_report
 # from threshold_utils import find_best_threshold_roc
-from config import device
+from config.config import device
 
 # ==== LABEL MAPPINGS ====
 # Mapping for level 1: merge Type 0 & 1 into bicuspid
