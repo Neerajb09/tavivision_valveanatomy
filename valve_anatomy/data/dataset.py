@@ -1,4 +1,9 @@
 # dataset.py
+import sys
+import os
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+sys.path.insert(0, ROOT_DIR)
+
 
 import os, glob
 import numpy as np
@@ -7,7 +12,7 @@ from PIL import Image
 import torch
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
-from config import RGB_DIR, FLOW_DIR, BATCH_SIZE, NUM_FRAMES, IMG_SIZE
+from config.config import RGB_DIR, FLOW_DIR, BATCH_SIZE, NUM_FRAMES, IMG_SIZE
 import random
 
 transform = transforms.Compose([

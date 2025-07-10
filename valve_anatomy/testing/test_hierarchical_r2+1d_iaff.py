@@ -1,12 +1,17 @@
 # test_hierarchical.py
+import sys
+import os
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+sys.path.insert(0, ROOT_DIR)
+
 
 import torch
 from tqdm import tqdm
 from sklearn.metrics import classification_report, confusion_matrix
-from dataset import get_loader
-from model_fusion import DualStreamLateFusionModel
-from evaluate import evaluate_with_report
-from config import device
+from data.dataset import get_loader
+from model.r2plus1d_hierarchical_iaff import DualStreamLateFusionModel
+from evalution.evaluation_hierarchical import evaluate_with_report
+from config.config import device
 
 # ==== LABEL MAPPINGS ====
 label_mapping_level1 = {0: 0, 1: 0, 2: 1}

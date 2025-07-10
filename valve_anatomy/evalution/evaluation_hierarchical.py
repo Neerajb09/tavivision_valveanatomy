@@ -3,7 +3,7 @@
 import torch
 from tqdm import tqdm
 from sklearn.metrics import classification_report, confusion_matrix
-from config import device
+from config.config import device
 
 def evaluate(model, loader, split_name="Val", threshold=None):
     """
