@@ -34,9 +34,10 @@ model_lvl1_name = 'dual_stream_level1_iaff_random.pth'
 
 # Train Level 1 model
 train_model(model_lvl1, train_loader_lvl1, val_loader_lvl1, model_lvl1_name)
-
+model_dir = 'weights'
+model_path1 = os.path.join(model_dir, model_lvl1_name)
 # Reload best model after training
-model_lvl1.load_state_dict(torch.load(model_lvl1_name))
+model_lvl1.load_state_dict(torch.load(model_path1))
 
 # Evaluate model on validation set with default threshold
 evaluate_with_report(model_lvl1, val_loader_lvl1, split_name="Val Level 1 (default)")
@@ -63,9 +64,10 @@ model_lvl2_name = 'dual_stream_level2_iaff_random.pth'
 
 # Train Level 2 model
 train_model(model_lvl2, train_loader_lvl2, val_loader_lvl2, model_lvl2_name)
-
+model_dir = 'weights'
+model_path2 = os.path.join(model_dir, model_lvl2_name)
 # Reload best model after training
-model_lvl2.load_state_dict(torch.load(model_lvl2_name))
+model_lvl2.load_state_dict(torch.load(model_path2))
 
 # Evaluate model on validation set
 evaluate_with_report(model_lvl2, val_loader_lvl2, split_name="Val Level 2")

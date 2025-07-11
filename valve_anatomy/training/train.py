@@ -13,7 +13,7 @@ def train_model(model, train_loader, val_loader, model_name, num_epochs=EPOCHS, 
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=LR)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.25)
-
+    model_path = os.path.join('weights', model_name)
     best_val_acc = 0
     patience = 0
 
@@ -43,7 +43,7 @@ def train_model(model, train_loader, val_loader, model_name, num_epochs=EPOCHS, 
         if val_acc > best_val_acc:
             best_val_acc = val_acc
             patience = 0
-            torch.save(model.state_dict(), model_name)
+            torch.save(model.state_dict(), model_path)
             print("  → Best model saved")
         else:
             patience += 1
