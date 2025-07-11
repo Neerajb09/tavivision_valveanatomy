@@ -10,7 +10,7 @@ FLOW_DIR = '/mhgp003-v1/kanpur/data_cardiovision/valve_anatomy_classification/TV
 BATCH_SIZE = 8
 EPOCHS = 30
 NUM_FRAMES = 32
-IMG_SIZE = 224
+IMG_SIZE = 112
 LR = 1e-4
 PATIENCE = 7
 
