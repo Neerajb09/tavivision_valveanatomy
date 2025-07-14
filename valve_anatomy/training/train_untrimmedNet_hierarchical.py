@@ -1,3 +1,5 @@
+# training/train_untrimmedNet_hierarchical.py
+
 import os
 import sys
 
@@ -40,17 +42,18 @@ train_loader_lvl1 = get_loader('train_augmented', label_mapping=label_mapping_lv
 val_loader_lvl1 = get_loader('val', label_mapping=label_mapping_lvl1, n_clips=n_clips)
 
 model_lvl1 = TwoStreamUntrimmedNet(num_classes=2, n_clips=n_clips).to(device)
-model_path_lvl1 = os.path.join(model_dir, 'untrimmednet_level1_attention.pth')
+model_lvl1_name = 'untrimmednet_level1_attention.pth'  # Only name, not path
 
 train_model(
     model_lvl1,
     train_loader_lvl1,
     val_loader_lvl1,
-    model_path_lvl1,
+    model_lvl1_name,
     num_epochs=EPOCHS,
     patience_limit=PATIENCE
 )
 
+model_path_lvl1 = os.path.join('weights', model_lvl1_name)
 model_lvl1.load_state_dict(torch.load(model_path_lvl1))
 evaluate_with_report(model_lvl1, val_loader_lvl1, split_name="Val Level 1 (default)")
 evaluate_with_report(model_lvl1, val_loader_lvl1, split_name="Val Level 1 (thresholded)", threshold=None)
@@ -64,17 +67,18 @@ train_loader_lvl2 = get_loader('train_augmented', filter_classes=filter_classes_
 val_loader_lvl2 = get_loader('val', filter_classes=filter_classes_lvl2, n_clips=n_clips)
 
 model_lvl2 = TwoStreamUntrimmedNet(num_classes=2, n_clips=n_clips).to(device)
-model_path_lvl2 = os.path.join(model_dir, 'untrimmednet_level2_attention.pth')
+model_lvl2_name = 'untrimmednet_level2_attention.pth'  # Only name, not path
 
 train_model(
     model_lvl2,
     train_loader_lvl2,
     val_loader_lvl2,
-    model_path_lvl2,
+    model_lvl2_name,
     num_epochs=EPOCHS,
     patience_limit=PATIENCE
 )
 
+model_path_lvl2 = os.path.join('weights', model_lvl2_name)
 model_lvl2.load_state_dict(torch.load(model_path_lvl2))
 evaluate_with_report(model_lvl2, val_loader_lvl2, split_name="Val Level 2")
 
