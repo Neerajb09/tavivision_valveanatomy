@@ -1,120 +1,99 @@
-# data/dataset_untrimmedNetHierarchical.py
-
+import sys
 import os
-import cv2
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
+sys.path.insert(0, ROOT_DIR)
+
+import glob
 import numpy as np
+import imageio.v2 as imageio
+from PIL import Image
 import torch
 from torch.utils.data import Dataset, DataLoader
+from torchvision import transforms
+from config.config import RGB_DIR, FLOW_DIR, BATCH_SIZE, NUM_FRAMES, IMG_SIZE
 import random
 
-from config.config import RGB_DIR, FLOW_DIR, BATCH_SIZE, IMG_SIZE, NUM_FRAMES as CLIP_LEN
+transform = transforms.Compose([
+    transforms.Resize((IMG_SIZE, IMG_SIZE)),
+    transforms.CenterCrop(IMG_SIZE),
+    transforms.ToTensor(),
+    transforms.Normalize([0.45, 0.45, 0.45], [0.225, 0.225, 0.225])
+])
 
 class DualStreamDataset(Dataset):
-    def __init__(self, rgb_root, flow_root, split, stage='stage1', clip_len=CLIP_LEN, n_clips=5, label_mapping=None, filter_classes=None):
-        self.rgb_root = rgb_root
-        self.flow_root = flow_root
-        self.split = split
-        self.stage = stage
-        self.clip_len = clip_len
+    def __init__(self, rgb_root, flow_root, split, transform=transform, num_frames=NUM_FRAMES,
+                 n_clips=5, label_mapping=None, filter_classes=None):
+        self.rgb_root = os.path.join(rgb_root, split)
+        self.flow_root = os.path.join(flow_root, split)
+        self.transform = transform
+        self.num_frames = num_frames
         self.n_clips = n_clips
-        self.label_mapping = label_mapping
-        self.filter_classes = filter_classes
+        self.samples = []
+        self.class_to_idx = {}
 
-        self.class_mapping_stage1 = {'Bicuspid_Type_0': 1, 'Bicuspid_Type_1': 1, 'Tricuspid': 0}
-        self.class_mapping_stage2 = {'Bicuspid_Type_0': 0, 'Bicuspid_Type_1': 1}
+        classes = sorted(os.listdir(self.rgb_root))
+        self.class_to_idx = {cls: i for i, cls in enumerate(classes)}
 
-        self.samples = self._load_file_paths()
+        for cls in classes:
+            rgb_paths = glob.glob(os.path.join(self.rgb_root, cls, '**', '*.mp4'), recursive=True)
+            for rgb_path in rgb_paths:
+                rel_path = os.path.relpath(rgb_path, self.rgb_root)
+                flow_rel_path = rel_path.replace(".mp4", "_flow_vis.mp4")
+                flow_path = os.path.join(self.flow_root, flow_rel_path)
 
-    def _load_file_paths(self):
-        samples = []
-        seg_path = os.path.join(self.rgb_root, self.split)
-        for class_dir in os.listdir(seg_path):
-            class_dir_path = os.path.join(seg_path, class_dir)
-            for file in os.listdir(class_dir_path):
-                filename_wo_ext = os.path.splitext(file)[0]
-                seg_file_path = os.path.join(class_dir_path, file)
-                flow_file_name = filename_wo_ext + "_flow_vis.mp4"
-                flow_file_path = os.path.join(self.flow_root, self.split, class_dir, flow_file_name)
+                if os.path.exists(flow_path):
+                    original_label = self.class_to_idx[cls]
 
-                if os.path.exists(flow_file_path):
-                    # apply stage logic
-                    if self.stage == 'stage1':
-                        label = self.class_mapping_stage1[class_dir]
-                    elif self.stage == 'stage2' and class_dir != 'Tricuspid':
-                        label = self.class_mapping_stage2[class_dir]
-                    else:
+                    if filter_classes is not None and original_label not in filter_classes:
                         continue
 
-                    # optional filtering
-                    if self.filter_classes is not None and label not in self.filter_classes:
-                        continue
-                    if self.label_mapping is not None:
-                        label = self.label_mapping[label]
-
-                    samples.append((seg_file_path, flow_file_path, label))
-        return samples
+                    label = label_mapping[original_label] if label_mapping else original_label
+                    self.samples.append((rgb_path, flow_path, label))
+        random.shuffle(self.samples)
 
     def __len__(self):
         return len(self.samples)
 
-    def _read_all_frames(self, video_path):
-        cap = cv2.VideoCapture(video_path)
-        if not cap.isOpened():
-            raise ValueError(f"❌ Could not open video: {video_path}")
+    def load_video_clips(self, path):
+        try:
+            reader = imageio.get_reader(path, 'ffmpeg')
+            raw = [Image.fromarray(frame) for frame in reader]
+            reader.close()
+        except Exception as e:
+            print(f"[ERROR] Failed to read video {path}: {e}")
+            raw = []
 
-        frames = []
-        while True:
-            ret, frame = cap.read()
-            if not ret:
-                break
-            frame = cv2.resize(frame, (IMG_SIZE, IMG_SIZE))
-            frames.append(frame)
-        cap.release()
-
-        if len(frames) == 0:
-            raise ValueError(f"❌ No readable frames in: {video_path}")
-        return np.array(frames)
-
-    def _sample_clips(self, video_path):
-        all_frames = self._read_all_frames(video_path)
-        total_frames = len(all_frames)
+        total = len(raw)
         clips = []
 
         for _ in range(self.n_clips):
-            if total_frames < self.clip_len:
-                clip = list(all_frames)
-                while len(clip) < self.clip_len:
-                    clip.append(clip[-1])
-                clip = np.stack(clip, axis=0)
+            if total == 0:
+                sampled = [Image.new("RGB", (IMG_SIZE, IMG_SIZE))] * self.num_frames
+            elif total < self.num_frames:
+                sampled = raw + [Image.new("RGB", (IMG_SIZE, IMG_SIZE))] * (self.num_frames - total)
             else:
-                start = random.randint(0, total_frames - self.clip_len)
-                clip = all_frames[start:start + self.clip_len]
+                start = random.randint(0, total - self.num_frames)
+                sampled = raw[start:start + self.num_frames]
 
-            clip = clip.transpose(3, 0, 1, 2) / 255.0  # (T, H, W, C) -> (C, T, H, W)
-            clips.append(torch.tensor(clip, dtype=torch.float32))
+            processed = [self.transform(img) for img in sampled]
+            tensor = torch.stack(processed, dim=1)  # shape: [C, T, H, W]
+            clips.append(tensor)
 
-        return torch.stack(clips)  # [N, C, T, H, W]
+        return torch.stack(clips)  # shape: [N, C, T, H, W]
 
     def __getitem__(self, idx):
-        try:
-            seg_path, flow_path, label = self.samples[idx]
-            rgb_clips = self._sample_clips(seg_path)
-            flow_clips = self._sample_clips(flow_path)
-            return (rgb_clips, flow_clips), label
-        except Exception as e:
-            print(f"⚠️ Skipping corrupted sample [{idx}] due to error: {e}")
-            return self.__getitem__((idx + 1) % len(self.samples))
+        rgb_path, flow_path, label = self.samples[idx]
+        rgb = self.load_video_clips(rgb_path)
+        flow = self.load_video_clips(flow_path)
+        return (rgb, flow), label
 
-def get_loader(split, stage='stage1', label_mapping=None, filter_classes=None, n_clips=5):
-    dataset = DualStreamDataset(
-        RGB_DIR,
-        FLOW_DIR,
-        split,
-        stage=stage,
-        label_mapping=label_mapping,
-        filter_classes=filter_classes,
-        n_clips=n_clips
-    )
-    loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=(split == 'train_augmented'), num_workers=8, pin_memory=True)
-    print(f"{split}: {len(dataset)} samples")
+def get_loader(split, label_mapping=None, filter_classes=None, n_clips=5):
+    ds = DualStreamDataset(RGB_DIR, FLOW_DIR, split,
+                           label_mapping=label_mapping,
+                           filter_classes=filter_classes,
+                           n_clips=n_clips)
+    loader = DataLoader(ds, batch_size=BATCH_SIZE,
+                        shuffle=(split == 'train_augmented'),
+                        num_workers=8, pin_memory=True)
+    print(f"{split}: {len(ds)} samples")
     return loader
