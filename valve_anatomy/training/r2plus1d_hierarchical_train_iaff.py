@@ -1,9 +1,9 @@
 # train_hierarchical.py
+
 import sys
 import os
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../"))
 sys.path.insert(0, ROOT_DIR)
-
 import torch
 from data.dataset import get_loader
 from model.r2plus1d_hierarchical_iaff import DualStreamLateFusionModel  # This model includes iAFF internally
@@ -30,7 +30,7 @@ val_loader_lvl1 = get_loader('val', label_mapping=label_mapping_level1)
 
 # Build model with iAFF fusion
 model_lvl1 = DualStreamLateFusionModel(num_classes=2).to(device)
-model_lvl1_name = 'dual_stream_level1_iaff_random.pth'
+model_lvl1_name = 'dual_stream_level1_iaff_random_opticaltvl1_final.pth'
 
 # Train Level 1 model
 train_model(model_lvl1, train_loader_lvl1, val_loader_lvl1, model_lvl1_name)
@@ -60,7 +60,7 @@ val_loader_lvl2 = get_loader('val', filter_classes=filter_classes_level2)
 
 # Build model with iAFF fusion
 model_lvl2 = DualStreamLateFusionModel(num_classes=2).to(device)
-model_lvl2_name = 'dual_stream_level2_iaff_random.pth'
+model_lvl2_name = 'dual_stream_level2_iaff_random_opticaltvl1_final.pth'
 
 # Train Level 2 model
 train_model(model_lvl2, train_loader_lvl2, val_loader_lvl2, model_lvl2_name)

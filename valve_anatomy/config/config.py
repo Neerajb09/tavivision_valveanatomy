@@ -4,7 +4,7 @@ import torch
 
 # Data directories
 RGB_DIR = '/mhgp003-v1/kanpur/data_cardiovision/valve_anatomy_classification/Segmented_videos'
-FLOW_DIR = '/mhgp003-v1/kanpur/data_cardiovision/valve_anatomy_classification/TVL1_Opticalflow'
+FLOW_DIR = '/mhgp003-v1/kanpur/data_cardiovision/valve_anatomy_classification/TVL1_OpticalflowFull'
 
 # Hyperparameters
 BATCH_SIZE = 8
