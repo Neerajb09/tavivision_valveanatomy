@@ -6,8 +6,8 @@ import os
 
 class SovFrameDetector:
     def __init__(self ):
-        self.yolo_model_path = "/mhgp003-v1/kanpur/data_cardiovision/valve_anatomy_classification/models/trained_yolo.pt"
-        self.device = torch.device("cuda:5" if torch.cuda.is_available() else "cpu")
+        self.yolo_model_path = "/weka/kanpur/data_cardiovision/valve_anatomy_classification/models/trained_yolo.pt"
+        self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         print(f"Initializing YOLO model on {self.device}")
         self.model = self.load_yolo_model(self.yolo_model_path)
         print("YOLO model loaded successfully.")

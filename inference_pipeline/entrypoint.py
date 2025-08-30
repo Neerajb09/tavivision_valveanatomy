@@ -43,10 +43,10 @@ class InferencePipeline:
 
 # # ==== Example Usage ====
 # if __name__ == "__main__":
-#     stage1_path = "/mnt/nvme_disk2/User_data/nb57077k/Phase2_/Valve_anatomy_classification/Model/hirechical/r2+1d/dual_stream_level1_iaff.pth"
-#     stage2_path = "/mnt/nvme_disk2/User_data/nb57077k/Phase2_/Valve_anatomy_classification/Model/hirechical/r2+1d/dual_stream_level2_iaff.pth"
-#     yolo_model_path = "/mhgp003-v1/kanpur/data_cardiovision/valve_anatomy_classification/models/yolov8_segmentation_run8_weights_best.pt"
-#     input_video = "/mnt/nvme_disk2/User_data/nb57077k/WhatsApp Video 2025-06-30 at 2.01.39 PM.mp4"
+#     stage1_path = "/nuvodata/User_data/neeraj/tavivision/valve_anatomy/weights/dual_stream_level1_iaff_random_opticaltvl1_final.pth"
+#     stage2_path = "/nuvodata/User_data/neeraj/tavivision/valve_anatomy/weights/dual_stream_level2_iaff_opticaltvl1_final_full.pth"
+#     yolo_model_path = "/weka/kanpur/data_cardiovision/valve_anatomy_classification/models/yolov8_segmentation_run8_weights_best.pt"
+#     input_video = "/nuvodata/User_data/neeraj/WhatsApp Video 2025-06-30 at 2.01.39 PM.mp4"
 
 #     pipeline = InferencePipeline(stage1_path, stage2_path, yolo_model_path, device='cuda:6')
 #     classification = pipeline.run(input_video)

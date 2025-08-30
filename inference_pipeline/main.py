@@ -9,9 +9,9 @@ app = FastAPI()
 
 # Load models once
 pipeline = InferencePipeline(
-    stage1_model= "/mnt/nvme_disk2/User_data/nb57077k/Phase2_/Valve_anatomy_classification/Model/hirechical/r2+1d/dual_stream_level1_iaff.pth",
-    stage2_model= "/mnt/nvme_disk2/User_data/nb57077k/Phase2_/Valve_anatomy_classification/Model/hirechical/r2+1d/dual_stream_level2_iaff.pth",
-    yolo_model_path= "/mhgp003-v1/kanpur/data_cardiovision/valve_anatomy_classification/models/yolov8_segmentation_run8_weights_best.pt",
+    stage1_model= "/nuvodata/User_data/neeraj/tavivision/valve_anatomy/weights/dual_stream_level1_iaff_random_opticaltvl1_final.pth",
+    stage2_model= "/nuvodata/User_data/neeraj/tavivision/valve_anatomy/weights/dual_stream_level2_iaff_opticaltvl1_final_full.pth",
+    yolo_model_path= "/weka/kanpur/data_cardiovision/valve_anatomy_classification/models/yolov8_segmentation_run8_weights_best.pt",
     device="cuda:0"
 )
 
