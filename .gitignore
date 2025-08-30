@@ -1,0 +1,11 @@
+*.pt
+*.pth
+*.mp4
+*.jpeg
+*.jpg
+*.png
+*.npy
+*.log
+*.csv       
+valve_anatomy/logs
+valve_anatomy/weights

