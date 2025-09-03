@@ -10,8 +10,8 @@ from config.config import LR, EPOCHS, PATIENCE, device
 from evalution.evaluation_hierarchical import evaluate
 
 def train_model(model, train_loader, val_loader, model_name, num_epochs=EPOCHS, patience_limit=PATIENCE):
-    criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=LR)
+    criterion = nn.CrossEntropyLoss(label_smoothing=0.1)
+    optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=LR, weight_decay=1e-4)
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamma=0.25)
     model_path = os.path.join('weights', model_name)
     best_val_acc = 0
