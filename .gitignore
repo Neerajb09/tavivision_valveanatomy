@@ -9,3 +9,6 @@
 *.csv       
 valve_anatomy/logs
 valve_anatomy/weights
+# Ignore Python cache files
+__pycache__/
+*.pyc
