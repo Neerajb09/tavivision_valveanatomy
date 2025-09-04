@@ -22,11 +22,11 @@ test_loader_full = get_loader('test')
 
 # ==== LOAD MODELS ====
 model_lvl1 = DualStreamLateFusionModel(num_classes=2).to(device)
-model_lvl1.load_state_dict(torch.load('/nuvodata/User_data/neeraj/tavivision/valve_anatomy/weights/dual_stream_level1_tvl1_32_10-4_labelsmoothing_weight_decay_frame'))
+model_lvl1.load_state_dict(torch.load('/mnt/nvme_disk2/User_data/nb57077k/tavivision/valve_anatomy/weights/dual_stream_level1_iaff_random_opticaltvl1_final.pth'))
 model_lvl1.eval()
 
 model_lvl2 = DualStreamLateFusionModel(num_classes=2).to(device)
-model_lvl2.load_state_dict(torch.load('/nuvodata/User_data/neeraj/tavivision/valve_anatomy/weights/dual_stream_level2_iaff_opticaltvl1_final_full.pth'))
+model_lvl2.load_state_dict(torch.load('/mnt/nvme_disk2/User_data/nb57077k/tavivision/valve_anatomy/weights/dual_stream_level2_iaff_random_opticaltvl1_final.pth'))
 model_lvl2.eval()
 
 # ==== STAGE 1 EVALUATION (ALONE, ARGMAX, NO THRESHOLD) ====
