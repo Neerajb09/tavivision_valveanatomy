@@ -9,10 +9,10 @@ import imageio_ffmpeg
 REQUIRE_GPU = True  # stop if CUDA TV-L1 isn't available
 
 def check_cuda_support():
-    print("🔍 Checking CUDA availability in OpenCV...")
+    print("Checking CUDA availability in OpenCV...")
     try:
         count = cv2.cuda.getCudaEnabledDeviceCount()
-        print(f"💻 CUDA-enabled GPU(s) detected: {count}")
+        print(f"CUDA-enabled GPU(s) detected: {count}")
         if count == 0:
             raise RuntimeError("No CUDA device found")
     except Exception as e:
@@ -20,10 +20,10 @@ def check_cuda_support():
 
     if not hasattr(cv2.cuda, "OpticalFlowDual_TVL1"):
         raise RuntimeError("cv2.cuda.OpticalFlowDual_TVL1 not in this OpenCV build")
-    print("✅ cv2.cuda.OpticalFlowDual_TVL1 is available.")
+    print("cv2.cuda.OpticalFlowDual_TVL1 is available.")
     try:
         # Log ffmpeg binary that imageio-ffmpeg will use
-        print(f"🎬 imageio-ffmpeg: {imageio_ffmpeg.get_ffmpeg_exe()}")
+        print(f"imageio-ffmpeg: {imageio_ffmpeg.get_ffmpeg_exe()}")
     except Exception:
         pass
 
@@ -94,8 +94,8 @@ def flow_to_color(flow):
     return cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
 
 def compute_flow_from_videos(input_dir, output_dir, fps=10):
-    print(f"📂 Input dir: {input_dir}")
-    print(f"💾 Output dir: {output_dir}")
+    print(f"Input dir: {input_dir}")
+    print(f"Output dir: {output_dir}")
 
     if REQUIRE_GPU:
         check_cuda_support()
@@ -108,7 +108,7 @@ def compute_flow_from_videos(input_dir, output_dir, fps=10):
         split_input = os.path.join(input_dir, split)
         split_output = os.path.join(output_dir, split)
         if not os.path.exists(split_input):
-            print(f"⚠️ Skipping missing split: {split_input}")
+            print(f"Skipping missing split: {split_input}")
             continue
 
         for cls in sorted(os.listdir(split_input)):
@@ -129,7 +129,7 @@ def compute_flow_from_videos(input_dir, output_dir, fps=10):
                 except StopIteration:
                     first = None
                 if first is None:
-                    print(f"❌ Cannot read {vid}")
+                    print(f"Cannot read {vid}")
                     continue
 
                 h, w = first.shape[:2]
@@ -144,7 +144,7 @@ def compute_flow_from_videos(input_dir, output_dir, fps=10):
 
                 writer.close()
 
-    print("✅ All videos processed.")
+    print("All videos processed.")
 
 if __name__ == "__main__":
     input_dir = "/weka/kanpur/data_cardiovision/valve_anatomy_classification/segmented_video_combined_32"
